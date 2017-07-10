@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*general content--------------------------------------------------------------*/
+
+html {
+  font-size: 14px;
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #2d2d2d;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+a {
+  color: #e2574c;
+  text-decoration: none;
+}
+
+i {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 96%;
+}
+
+/*navigation station----------------------------------------------------------------*/
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2% 0.5rem;
+}
+
+.logo {
+  align-self: flex-start;
+  flex: 0 1 50%;
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+.cart {
+  align-self: flex-end;
+  flex: 0 1 50%;
+  text-align: right;
+}
+
+.cart img {
+  max-width: 50px;
+}
+
+nav {
+  align-self: center;
+  flex: 1 0 auto;
+}
+
+nav ul {
+  border-top: 1px solid #d7d7d7;
+  text-align: center;
+  padding-top: .5rem
+}
+
+nav li {
+  display: inline;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+/*banner-------------------------------------------------------------------*/
+
+.banner {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,.25) 0,
+    rgba(0,0,0,.25)),
+    url(../images/banner-girl.png),
+    url(../images/flower-bkgd.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover, 150px 369px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  text-align: center;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.banner-text p {
+  /*font-weight: 400;*/
+  font-size: 1.25rem;
+}
+
+.banner-text h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+/*about----------------------------------------------*/
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.15rem;
+}
+
+/*products-------------------------------------------------*/
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products a {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+}
+
+
+.wide-mens {
+   background: url(../images/mens-category.jpg);
+   background-size: cover;
+   max-width: 100%;
+   padding-bottom: 50%;
+   flex: 1 0 100%;
+   border-bottom: 4px solid white;
+}
+
+.square {
+  max-width: 50%;
+  padding-bottom: 50%;
+  flex: 2 0 auto;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.square-trends {
+   background: url(../images/trends-category.jpg);
+   background-size: cover;
+   border-right: 4px solid white;
+}
+
+.square-glasses {
+   background: url(../images/glasses-category.jpg);
+   background-size: cover;
+   /*flex: 1 0 50%;*/
+}
+
+.square-sale {
+   background: url(../images/sale-category.jpg);
+   background-size: cover;
+}
+
+.square-bags {
+   background: url(../images/bags-category.jpg);
+   background-size: cover;
+}
+
+.wide-womens {
+   background: url(../images/womens-category.jpg);
+   background-size: cover;
+   max-width: 100%;
+   padding-bottom: 50%;
+   flex: 1 0 100%;
+   border-top: 4px solid white;
+}
+
+/*carousel---------------------------------*/
+
+.featured {
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2.4rem;
+}
+
+.featured p {
+  font-size: 1.15rem;
+}
+
+/*subscribe now :)-----------------------------*/
+
+.updates {
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,
+  rgba(0,0,0,.15)),
+  url(../images/wave-bkgd.jpg) no-repeat bottom;
+  margin-bottom: 8px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.updates h2 {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  margin-bottom: 1.5rem;
+}
+
+.updates p {
+  font-size: 1.15rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  padding: 0 2%;
+}
+
+.email-updates {
+  width: 90%;
+}
+
+input[type=email] {
+  width: 60%;
+  padding: .5rem 1.75rem;
+}
+
+input[type=submit] {
+  background-color: #e2574c;
+  color: #fff;
+  font-weight: 700;
+  padding: .25rem 1.5rem;
+  position: absolute;
+  right: .25rem;
+  top: .25rem;
+}
+
+/*footer---------------------------------------*/
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #242424;
+  text-align: center;
+  color: white;
+  line-height: 1.5rem;
+  width: 100%;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #e2574c;
+}
+
+.copyright, .phone-email {
+  margin-bottom: 1rem;
+}
+
+.phone-email a {
+  text-decoration: underline;
+}
+
+.address {
+  color: #969696;
+}
+
+.social-media li, i {
+  display: inline;
+  min-width: 25px;
+}
+
+.social-media {
+  margin-top: 2rem;
+}
+
+
+/*@media*/
+
+/*@media only screen and (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+  }*/
+
+  /*.banner {
+    background-size: cover;
+  }
+
+  .cart img {
+    width: 62px;
+  }
+}
+
+@media only screen and (min-width: 600px) { 
+  body {
+    font-size: 14px;
+  }
+}*/
+
+/*header*/
+/*navigation bar*/
+
+/*.navbar {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+  /*width: 100%;*/
+}
+
+/*.logo {
+  flex-basis: 20%;
+}
+
+.logo img {
+  width: 160px;
+  height: auto;
+}
+
+.cart {
+  flex-basis: 20%;
+  text-align: right;
+}
+
+.cart img {
+  width: 62;
+  height: auto;
+  align-self: flex-end;
+}*/
+
+/*nav li {
+  display: inline;
+  font-size: 1rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}*/
