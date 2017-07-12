@@ -58,6 +58,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1;
 }
 
 a {
@@ -122,6 +123,11 @@ nav li {
   display: inline;
   text-transform: uppercase;
   margin: 0 1rem;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #b64036;
 }
 
 /*banner-------------------------------------------------------------------*/
@@ -151,6 +157,7 @@ nav li {
 .banner-text p {
   /*font-weight: 400;*/
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .banner-text h4 {
@@ -167,7 +174,6 @@ nav li {
 
 .about h2 {
   font-size: 2.4rem;
-  line-height: 1;
   margin-bottom: 1.5rem;
 }
 
@@ -185,55 +191,85 @@ nav li {
 .products a {
   text-transform: uppercase;
   position: absolute;
+  top: 50%;
   left: 50%;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  line-height: 1;
+  transform: translate(-50%, -50%);
+}
+
+.products a:hover {
+  color: #F5EBC6
 }
 
 
-.wide-mens {
-   background: url(../images/mens-category.jpg);
-   background-size: cover;
-   max-width: 100%;
-   padding-bottom: 50%;
-   flex: 1 0 100%;
-   border-bottom: 4px solid white;
+.wide {
+  width: 100%;
+  padding-bottom: 50%;
+  position: relative;
 }
 
 .square {
-  max-width: 50%;
+  width: 50%;
   padding-bottom: 50%;
   flex: 2 0 auto;
   border-top: 4px solid white;
   border-bottom: 4px solid white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.wide-mens {
+   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,
+   rgba(0,0,0,.25)),
+   url(../images/mens-category.jpg);
+   background-size: cover;
+   /*flex: 1 0 100%;*/
+   border-bottom: 4px solid white;
 }
 
 .square-trends {
-   background: url(../images/trends-category.jpg);
+   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,
+   rgba(0,0,0,.25)),
+   url(../images/trends-category.jpg);
    background-size: cover;
    border-right: 4px solid white;
 }
 
 .square-glasses {
-   background: url(../images/glasses-category.jpg);
+   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,
+   rgba(0,0,0,.25)),
+   url(../images/glasses-category.jpg);
    background-size: cover;
+   border-left: 4px solid white;
    /*flex: 1 0 50%;*/
 }
 
 .square-sale {
-   background: url(../images/sale-category.jpg);
+   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,
+   rgba(0,0,0,.25)),
+   url(../images/sale-category.jpg);
    background-size: cover;
+   border-right: 4px solid white;
 }
 
 .square-bags {
-   background: url(../images/bags-category.jpg);
+   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,
+   rgba(0,0,0,.25)),
+   url(../images/bags-category.jpg);
    background-size: cover;
+   border-left: 4px solid white;
 }
 
 .wide-womens {
-   background: url(../images/womens-category.jpg);
+   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,
+   rgba(0,0,0,.25)),
+   url(../images/womens-category.jpg);
    background-size: cover;
-   max-width: 100%;
-   padding-bottom: 50%;
-   flex: 1 0 100%;
+   /*flex: 1 0 100%;*/
    border-top: 4px solid white;
 }
 
@@ -256,7 +292,7 @@ nav li {
 .updates {
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,
   rgba(0,0,0,.15)),
-  url(../images/wave-bkgd.jpg) no-repeat bottom;
+  url(../images/wave-bkgd.jpg) bottom;
   margin-bottom: 8px;
   text-align: center;
   color: white;
@@ -276,12 +312,15 @@ nav li {
 }
 
 .email-updates {
-  width: 90%;
+  /*width: 90%;*/
+  position: relative;
 }
 
 input[type=email] {
   width: 60%;
   padding: .5rem 1.75rem;
+  padding-right: 150px;
+  padding-left: 24.5px;
 }
 
 input[type=submit] {
@@ -290,7 +329,7 @@ input[type=submit] {
   font-weight: 700;
   padding: .25rem 1.5rem;
   position: absolute;
-  right: .25rem;
+  right: 3rem;
   top: .25rem;
 }
 
