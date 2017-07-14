@@ -133,14 +133,11 @@ nav a:hover {
 /*banner-------------------------------------------------------------------*/
 
 .banner {
-  width: 100%;
   background: linear-gradient(180deg, rgba(0,0,0,.25) 0,
     rgba(0,0,0,.25)),
-    url(../images/banner-girl.png),
-    url(../images/flower-bkgd.jpg);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover, 150px 369px;
+    url(../images/banner-girl.png) no-repeat 50% 70px,
+    url(../images/flower-bkgd.jpg) repeat-x;
+  background-size: cover, 150px 370px, cover;
   height: 400px;
   display: flex;
   align-items: center;
@@ -183,7 +180,7 @@ nav a:hover {
 
 /*products-------------------------------------------------*/
 
-.products {
+.three-products {
   display: flex;
   flex-wrap: wrap;
 }
@@ -210,6 +207,7 @@ nav a:hover {
   width: 100%;
   padding-bottom: 50%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .square {
@@ -227,7 +225,6 @@ nav a:hover {
    rgba(0,0,0,.25)),
    url(../images/mens-category.jpg);
    background-size: cover;
-   /*flex: 1 0 100%;*/
    border-bottom: 4px solid white;
 }
 
@@ -314,23 +311,44 @@ nav a:hover {
 .email-updates {
   /*width: 90%;*/
   position: relative;
+  margin-top: 2rem;
 }
 
 input[type=email] {
-  width: 60%;
-  padding: .5rem 1.75rem;
+  width: 88%;
+  padding: 1rem 1.75rem;
   padding-right: 150px;
   padding-left: 24.5px;
+  border-radius: 25px;
+  box-sizing: border-box; 
+  border: 0; 
 }
+
+ input[type=email]:focus {
+   box-shadow: 1px 1px 6px hsla(0,0%,39%,.8);
+   outline: none;
+} 
 
 input[type=submit] {
   background-color: #e2574c;
   color: #fff;
-  font-weight: 700;
-  padding: .25rem 1.5rem;
+  font-weight: 400;
+  padding: .75rem 1.5rem;
   position: absolute;
-  right: 3rem;
+  right: 7%;
   top: .25rem;
+  border-radius: 25px;
+  border: 0; 
+}
+
+ input[placeholder="Your Email"] {
+  color: #969696;
+  font-family: 'Raleway';
+  font-weight: 300;
+} 
+
+input[value="Subscribe"] {
+  font-family: 'Raleway';
 }
 
 /*footer---------------------------------------*/
@@ -376,28 +394,146 @@ footer a:hover {
   margin-top: 2rem;
 }
 
+/* @media--------min-600------------------------------ */
 
-/*@media*/
+@media only screen and (min-width: 600px) { 
 
-/*@media only screen and (min-width: 1240px) {
-  .container {
-    max-width: 1240px;
-  }*/
+  /* general min 600-------------------- */
 
-  /*.banner {
-    background-size: cover;
+  html {
+    font-size: 16px;
   }
 
-  .cart img {
-    width: 62px;
+  /* navbar min 600---------------------- */
+
+  .navbar {
+    flex-wrap: nowrap;
+    max-width: 1240px;
+  }
+
+  .navbar ul {
+    border-top: 0;
+    margin-bottom: .5rem;
+  }
+
+  .navbar li {
+    font-size: .9rem;
+    margin: 0 .4rem;
+  }
+
+  .cart {
+    order: 3;
+  }
+
+  /* banner min 600--------------------- */
+
+  .banner-text h4 {
+    font-size: 3rem;
+  }
+
+  /* about min 600-------------------------- */
+
+  .about {
+    width: 60%;
+  }
+
+  /* products min 600--------------------- */
+
+  .three-products {
+    width: 100%;
+    flex-wrap: nowrap; 
+  }
+
+  .products a {
+    font-size: 1.8rem;
+  }
+
+  .wide {
+    flex: 0 1 50%;
+    padding-bottom: 25%;
+  }
+
+  .square {
+    flex: 0 2 25%;
+    padding-bottom: 25%;
+  }
+
+  .wide-mens {
+    border-top: 0;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+  }
+
+  .square-trends {
+    border-top: 0;
+    border-left: 4px solid white;
+  }
+
+  .square-glasses {
+    border-top: 0;
+  }
+
+  .square-sale {
+    border-bottom: 0;
+  }
+
+  .square-bags {
+    border-bottom: 0;
+    border-right: 4px solid white;
+  }
+
+  .wide-womens {
+    border-left: 4px solid white;
   }
 }
 
-@media only screen and (min-width: 600px) { 
-  body {
-    font-size: 14px;
+/*@media------min-1240-----------------------------------*/
+
+@media only screen and (min-width: 1240px) {
+
+  /* navbar min 1240--------------- */
+
+  .navbar li {
+    font-size: 16px;
+    margin: 0 1rem;
   }
-}*/
+
+  .logo img {
+    max-width: 160px;
+  }
+
+  .cart img {
+    max-width: 62px;
+  }
+
+  /* banner min 1240---------------------------- */
+
+  .banner {
+    height: 550px;
+    background-size: cover, 250px 615px, contain; 
+  }
+
+  .banner-text h4 {
+    font-size: 4rem;
+  }
+
+  .banner-text p {
+    padding-bottom: 1.5rem;
+  }
+
+  /* about min 1240-------------------------- */
+
+  .about {
+    width: 50%;
+  }
+
+  /* products min 1240-------------------- */
+
+  .products a {
+    font-size: 2.4rem;
+  }
+
+}
 
 /*header*/
 /*navigation bar*/
@@ -409,7 +545,7 @@ footer a:hover {
   justify-content: space-between;
   align-items: center;*/
   /*width: 100%;*/
-}
+
 
 /*.logo {
   flex-basis: 20%;
