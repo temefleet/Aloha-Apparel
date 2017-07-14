@@ -140,7 +140,7 @@ nav a:hover {
   background-size: cover, 150px 370px, cover;
   height: 400px;
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 
 .banner-text {
