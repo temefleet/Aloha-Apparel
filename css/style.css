@@ -289,7 +289,7 @@ nav a:hover {
 .updates {
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,
   rgba(0,0,0,.15)),
-  url(../images/wave-bkgd.jpg) bottom;
+  url(../images/wave-bkgd.jpg) no-repeat bottom;
   margin-bottom: 8px;
   text-align: center;
   color: white;
@@ -306,10 +306,13 @@ nav a:hover {
   font-size: 1.15rem;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   padding: 0 2%;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .email-updates {
-  /*width: 90%;*/
+  margin: 0 auto;
+  max-width: 460px;
   position: relative;
   margin-top: 2rem;
 }
@@ -408,7 +411,6 @@ footer a:hover {
 
   .navbar {
     flex-wrap: nowrap;
-    max-width: 1240px;
   }
 
   .navbar ul {
@@ -492,6 +494,10 @@ footer a:hover {
 @media only screen and (min-width: 1240px) {
 
   /* navbar min 1240--------------- */
+
+  .navbar {
+    max-width: 1200px;
+  }
 
   .navbar li {
     font-size: 16px;
