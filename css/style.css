@@ -74,6 +74,10 @@ strong {
   font-weight: 700;
 }
 
+button {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
 .container {
   margin: 0 auto;
   padding: 4rem 0;
@@ -288,7 +292,7 @@ nav a:hover {
 .product-cell {
   text-align: center;
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   box-sizing: border-box;
 }
 
@@ -303,12 +307,22 @@ nav a:hover {
 .product-cell h3 {
   color: #e2574c;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .price {
   color: #969696;
   font-weight: 400;
+}
+
+.add-to-cart {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  padding: .4rem 1rem;
+  margin-top: 1rem;
+  font-size: .8rem;
 }
 
 /*subscribe now :)-----------------------------*/
@@ -488,12 +502,12 @@ footer a:hover {
   }
 
   .wide {
-    flex: 0 1 50%;
+     flex: 0 1 50%; 
     padding-bottom: 25%;
   }
 
   .square {
-    flex: 0 2 25%;
+     flex: 0 2 25%; 
     padding-bottom: 25%;
   }
 
@@ -631,12 +645,17 @@ footer a:hover {
 
   /* carousel min 1240---------------------------- */
 
+  .main-carousel {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
   .carousel-cell {
     width: 25%;
   }
 
   .carousel-cell img {
-    width: 100%;
+    max-width: 100%;
   }
 
 }
