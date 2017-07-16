@@ -404,6 +404,7 @@ input[type=email] {
 input[type=email]:focus {
    box-shadow: 1px 1px 6px hsla(0,0%,39%,.8);
    outline: none;
+   color: #242424;
 } 
 
 input[type=submit] {
@@ -417,6 +418,7 @@ input[type=submit] {
   border-radius: 25px;
   border: 0; 
   cursor: pointer;
+  outline: none;
 }
 
 input[type=submit]:hover {

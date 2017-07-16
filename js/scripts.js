@@ -24,8 +24,18 @@ $(function() {
   // add-to-cart counter
   var itemCount = 0;
   
-  $('.add-to-cart').click(function () {
+  $(".add-to-cart").click(function () {
     itemCount++;
     $('.item-count').html(itemCount).css('display','block');
   }); 
+
+  // Subscribe button alert
+  $("input[type='submit']:valid").click(function() {
+    var validEmail = document.querySelector("input[type='email']");
+    if (validEmail.checkValidity() == true) {
+      alert("Thanks for Subscribing!");
+      return false;
+    }
+  });
+  // \S+@\S+
 });
