@@ -334,6 +334,11 @@ nav a:hover {
   padding: .4rem 1rem;
   margin-top: 1rem;
   font-size: .8rem;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #0f87a2;
 }
 
 /*subscribe now :)-----------------------------*/
@@ -379,7 +384,7 @@ input[type=email] {
   border: 0; 
 }
 
- input[type=email]:focus {
+input[type=email]:focus {
    box-shadow: 1px 1px 6px hsla(0,0%,39%,.8);
    outline: none;
 } 
@@ -394,9 +399,14 @@ input[type=submit] {
   top: .25rem;
   border-radius: 25px;
   border: 0; 
+  cursor: pointer;
 }
 
- input[placeholder="Your Email"] {
+input[type=submit]:hover {
+  background-color: #b64036;
+}
+
+input[placeholder="Your Email"] {
   color: #969696;
   font-family: 'Raleway';
   font-weight: 300;
