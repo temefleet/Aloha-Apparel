@@ -37,5 +37,4 @@ $(function() {
       return false;
     }
   });
-  // \S+@\S+
 });
