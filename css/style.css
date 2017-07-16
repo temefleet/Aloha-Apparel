@@ -116,10 +116,27 @@ button {
   align-self: flex-end;
   flex: 0 1 50%;
   text-align: right;
+  position: relative;
 }
 
 .cart img {
   max-width: 50px;
+}
+
+.item-count {
+  position: absolute;
+  display: none;
+  top: -4px; 
+  right: -1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e2574c;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: .8rem;
 }
 
 nav {
@@ -500,6 +517,11 @@ footer a:hover {
     order: 3;
   }
 
+  .item-count {
+    line-height: 1.4;
+    right: -3px;
+  }
+
   /* banner min 600--------------------- */
 
   .banner {
@@ -646,6 +668,14 @@ footer a:hover {
 
   .cart img {
     max-width: 62px;
+  }
+
+  .item-count {
+    line-height: 1.3;
+    right: -3px;
+    height: 24px;
+    width: 24px;
+    font-size: 1rem;
   }
 
   /* banner min 1240---------------------------- */
