@@ -54,6 +54,8 @@ html {
   font-family: 'Raleway', Arial, sans-serif;
   color: #2d2d2d;
   font-weight: 300;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,7 +103,7 @@ button {
   position: fixed;  
   width: 100%;
   top: 0;
-  left: 0;
+  left: 0; 
   z-index: 50; 
   border-bottom: 1px solid #d7d7d7;
   box-shadow: 1px 5px 6px -6px hsla(0, 0%, 50%, .50); 
