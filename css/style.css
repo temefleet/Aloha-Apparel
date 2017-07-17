@@ -156,7 +156,7 @@ nav {
       align-self: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+           flex: 1 0 auto;
 }
 
 nav ul {
@@ -168,7 +168,7 @@ nav ul {
 nav li {
   display: inline;
   text-transform: uppercase;
-  margin: 0 1rem;
+   margin: 0 1rem; 
   font-weight: 400;
 }
 
@@ -268,20 +268,20 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-.wide > p {
-  padding-bottom: 50%;
-}
-
-.square > p {
-  padding-bottom: 100%;
-}
-
 .square {
   width: 50%;
   border-top: 4px solid white;
   border-bottom: 4px solid white;
   box-sizing: border-box;
   position: relative;
+}
+
+.wide > p {
+  padding-bottom: 50%;
+}
+
+.square > p {
+  padding-bottom: 100%;
 }
 
 .wide-mens {
@@ -365,6 +365,10 @@ nav a:hover {
 
 .featured-text p {
   font-size: 1.15rem;
+}
+
+.product-cell > img {
+  max-width: 100%;
 }
 
 .product-cell {

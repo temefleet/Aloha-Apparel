@@ -5,7 +5,8 @@ $(function() {
     // options
     cellAlign: 'left',
     contain: true,
-    prevNextButtons: false
+    prevNextButtons: false,
+    autoPlay: true
   });
 
   // slow scroll
