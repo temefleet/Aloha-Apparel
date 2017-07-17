@@ -10,7 +10,7 @@ $(function() {
 
   // slow scroll
   $(".navbar a").not('[href="#"]').click(function() {
-    var sectionId = $(this).attr("href");
+    let sectionId = $(this).attr("href");
     
     if ($(window).width() < 600) {	
 		  $("body").animate({scrollTop: $(sectionId).offset().top-115.85}, "slow");
@@ -23,7 +23,7 @@ $(function() {
   });
 
   // add-to-cart counter
-  var itemCount = 0;
+  let itemCount = 0;
   
   $(".add-to-cart").click(function () {
     itemCount++;
@@ -32,7 +32,7 @@ $(function() {
 
   // Subscribe button alert
   $("input[type='submit']").click(function() {
-    var validEmail = document.querySelector("input[type='email']");
+    let validEmail = document.querySelector("input[type='email']");
     if (validEmail.checkValidity() == true) {
       alert("Thanks for Subscribing!");
       return false;
