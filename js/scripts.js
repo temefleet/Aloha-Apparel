@@ -4,7 +4,8 @@ $(function() {
   $('.main-carousel').flickity({
     // options
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    prevNextButtons: false
   });
 
   // slow scroll
@@ -30,7 +31,7 @@ $(function() {
   }); 
 
   // Subscribe button alert
-  $("input[type='submit']:valid").click(function() {
+  $("input[type='submit']").click(function() {
     var validEmail = document.querySelector("input[type='email']");
     if (validEmail.checkValidity() == true) {
       alert("Thanks for Subscribing!");
