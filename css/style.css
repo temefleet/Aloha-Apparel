@@ -109,11 +109,8 @@ button {
 }
 
 .logo {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .logo img {
@@ -121,11 +118,8 @@ button {
 }
 
 .cart {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   text-align: right;
   position: relative;
 }
@@ -151,9 +145,9 @@ button {
 }
 
 nav {
-  -ms-flex-item-align: center;
+   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center;
+      align-self: center; 
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
            flex: 1 0 auto;
@@ -207,7 +201,6 @@ nav a:hover {
 }
 
 .banner-text p {
-  /*font-weight: 400;*/
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -251,7 +244,7 @@ nav a:hover {
   color: white;
   font-size: 1.6rem;
   font-weight: 400;
-  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  text-shadow: 2px 2px 4px hsla(0,0%,40%,.8);
   line-height: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);  
