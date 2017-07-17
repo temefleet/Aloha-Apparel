@@ -168,7 +168,7 @@ nav ul {
 nav li {
   display: inline;
   text-transform: uppercase;
-   margin: 0 1rem; 
+  margin: 0 1rem; 
   font-weight: 400;
 }
 
@@ -754,10 +754,6 @@ footer a:hover {
 
   .banner-text h4 {
     font-size: 4rem;
-  }
-
-  .banner-text p {
-    padding-bottom: 1.5rem;
   }
 
   /* about min 1240-------------------------- */
