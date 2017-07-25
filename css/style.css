@@ -686,20 +686,18 @@ footer a:hover {
     margin-top: 0;
   }
 
-    .social-media ul {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  .social-media ul {
     padding-right: 3rem;
   }  
 
   .social-media li {
-    display: block;
+    display: block;  
     line-height: 2rem;
     text-align: left;
   }
 
   .social-media p {
-    display: inline-block;
+    display: inline-block; 
     font-family: 'Raleway', Arial, sans-serif;
   }
 
