@@ -504,7 +504,7 @@ input[type=submit]:hover {
 }
 
 input[type=submit]:focus {
-  box-shadow: 1px 1px 6px hsla(0,0%,39%,.8);
+  box-shadow: 1px 1px 10px hsla(0,0%,39%,.8);
 }
 
 input[placeholder="Your Email"] {
